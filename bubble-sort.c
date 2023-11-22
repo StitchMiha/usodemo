@@ -22,11 +22,11 @@ void bubbleSort(int arr[], int n)
                 swapped = true;
             }
         }
-        if (swapped == false)
+        if (swapped == false) {
             break;
     }
 }
-
+}
 void printArray(int arr[], int size)
 {
     int i;
@@ -36,10 +36,10 @@ void printArray(int arr[], int size)
  
 int main()
 {
-    int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
+    int arr[] = { 21, 1, 4, 100, 5, 88, 79, 25 };
     int n = sizeof(arr) / sizeof(arr[0]);
     bubbleSort(arr, n);
-    printf("Sorted array: \n");
+    printf("This is how the sorted array looks like: \n");
     printArray(arr, n);
     return 0;
 }
